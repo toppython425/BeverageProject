@@ -16,3 +16,6 @@ class Beverage:
 
     def set_price(self, price):
         self.__price = price
+
+    def describe(self):
+        return f"Газировка: {self.get_name()}, объем: {self.get_size()}, цена: {self.get_price()}"
