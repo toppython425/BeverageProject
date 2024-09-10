@@ -13,3 +13,6 @@ class Beverage:
 
     def get_price(self):
         return self.__price
+
+    def set_price(self, price):
+        self.__price = price
