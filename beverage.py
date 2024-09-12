@@ -37,6 +37,8 @@ class Soda(Beverage):
 
 
 class DietSoda(Soda):
+    """Добавлен класс диетической газировки"""
 
     def describe(self):
+        """Расширен метод класса родителя (Soda)"""
         return f"{super().describe()}, фича: Диетическая!"
