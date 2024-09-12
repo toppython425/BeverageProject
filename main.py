@@ -1,6 +1,7 @@
 from beverage import Soda, DietSoda
 
 if __name__ == "__main__":
+    """Добавлен интерфейс пользователя"""
     soda_1 = Soda("Coca Cola", 1.0, 90, "Вкус Колы")
     soda_2 = Soda("Pepsi", 1.5, 120, "Вкус Пепси")
     diet_soda_1 = DietSoda("Cola Zero", 1.0, 95, "Вкус Колы Диетической")
