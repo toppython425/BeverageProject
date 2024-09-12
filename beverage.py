@@ -19,3 +19,22 @@ class Beverage:
 
     def describe(self):
         return f"Газировка: {self.get_name()}, объем: {self.get_size()}, цена: {self.get_price()}"
+
+
+class Soda(Beverage):
+
+    def __init__(self, name, size, price, flavour):
+        super().__init__(name, size, price)
+        self.__flavour = flavour
+
+    def get_flavour(self):
+        return self.__flavour
+
+    def describe(self):
+        return f"{super().describe()}, вкус: {self.get_flavour()}"
+
+
+class DietSoda(Soda):
+
+    def describe(self):
+        return f"{super().describe()}, фича: Диетическая!"
