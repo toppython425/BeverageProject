@@ -24,15 +24,17 @@ class Beverage:
 
 
 class Soda(Beverage):
-
+    """Добавлен подкласс"""
     def __init__(self, name, size, price, flavour):
         super().__init__(name, size, price)
         self.__flavour = flavour
-
+    
     def get_flavour(self):
+        """Добавлен геттер для нового поля подкласса"""
         return self.__flavour
 
     def describe(self):
+        """Расширен метод базового класса"""
         return f"{super().describe()}, вкус: {self.get_flavour()}"
 
 
