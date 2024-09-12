@@ -1,10 +1,11 @@
 class Beverage:
-
+    """Добавлен базовый класс для газировки"""
     def __init__(self, name, size, price):
         self.__name = name
         self.__size = size
         self.__price = price
 
+    """Добавлены геттеры"""
     def get_name(self):
         return self.__name
 
@@ -18,6 +19,7 @@ class Beverage:
         self.__price = price
 
     def describe(self):
+        """Метод для выдачи информации о продукции"""
         return f"Газировка: {self.get_name()}, объем: {self.get_size()}, цена: {self.get_price()}"
 
 
@@ -37,6 +39,8 @@ class Soda(Beverage):
 
 
 class DietSoda(Soda):
+    """Добавлен класс диетической газировки"""
 
     def describe(self):
+        """Расширен метод класса родителя (Soda)"""
         return f"{super().describe()}, фича: Диетическая!"
