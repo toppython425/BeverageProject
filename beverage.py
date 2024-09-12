@@ -32,3 +32,9 @@ class Soda(Beverage):
 
     def describe(self):
         return f"{super().describe()}, вкус: {self.get_flavour()}"
+
+
+class DietSoda(Soda):
+
+    def describe(self):
+        return f"{super().describe()}, фича: Диетическая!"
