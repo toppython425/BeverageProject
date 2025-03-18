@@ -7,6 +7,7 @@ if __name__ == "__main__":
     diet_soda_1 = DietSoda("Cola Zero", 1.0, 95, "Вкус Колы Диетической")
     diet_soda_2 = DietSoda("Diet Pepsi ", 1.5, 130, "Вкус Пепси Диетической")
 
+    # проверка работы программы
     print(soda_1.describe(), end="\n\n")
     print(soda_2.describe(), end="\n\n")
     print(diet_soda_1.describe(), end="\n\n")
